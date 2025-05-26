@@ -1,0 +1,25 @@
+.home-container {
+  background-image: url('/ricoro-falls.jpg'); /* Reference it correctly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  padding: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+nav {
+  background-color: #0c5c17;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}

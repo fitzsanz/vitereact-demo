@@ -1,0 +1,38 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: rgba(8, 102, 12, 0.6);
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar-title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.navbar-links a {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  background-color: #96b393;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar-links a:hover {
+    color: rgb(5, 75, 5);
+  text-decoration: none;
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
