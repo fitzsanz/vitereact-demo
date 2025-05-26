@@ -1,16 +1,33 @@
+/* Make the whole page take full height and use flex for layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App container will hold the main content and grow */
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Your existing home-container styling is good */
 .home-container {
-  background-image: url('/ricoro-falls.jpg'); /* Reference it correctly */
+  background-image: url('/ricoro-falls.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
   color: white;
   padding: 3rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  /* Optional: add flex-grow so it expands */
+  flex-grow: 1;
 }
 
-
-
+/* Nav styling stays as is */
 nav {
   background-color: #0c5c17;
   padding: 1rem;
@@ -18,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 a {
   color: white;
   margin-left: 1rem;
